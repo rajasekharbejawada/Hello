@@ -14,7 +14,6 @@ pipeline {
     stage('deploy') {
       steps {
         writeFile(file: 'hellomiracle', text: 'demo')
-        echo 'hello miracle'
       }
     }
   }
