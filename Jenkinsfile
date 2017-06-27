@@ -6,5 +6,10 @@ pipeline {
         build 'Hello'
       }
     }
+    stage('deploy') {
+      steps {
+        writeFile(file: 'hellomiracle', text: 'demo')
+      }
+    }
   }
 }
